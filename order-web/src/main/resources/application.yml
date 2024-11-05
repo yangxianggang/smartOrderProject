@@ -1,0 +1,12 @@
+server:
+  port: ${SERVER_PORT:9090}
+# 开发配置
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/dc_async_service?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+      username: root
+      password: root
+  #多环境配置
+  profiles:
+    active: dev
